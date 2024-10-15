@@ -3,10 +3,10 @@ html {
 }
 
 :root {
-  --bg-color: #3c332f;
-  --section-color: #5b5350;
-  --subheader-color: #d48c6a;
-  --main-header-color: #dcb7a6;
+  --bg-color: #000;
+  --section-color: #000;
+  --subheader-color: #dea164;
+  --main-header-color: #fff;
   --text-color: #f0e5e0;
   /* --bg-color: #16522e;
   --section-color: #27683c;
@@ -16,7 +16,8 @@ html {
 
 /* General Styles */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -74,14 +75,24 @@ main {
   max-width: 1000px;
 }
 
+#trebel {
+  filter: invert(68%) sepia(46%) saturate(1433%) hue-rotate(336deg) brightness(100%) contrast(92%);
+  width: 100px;
+  height: auto
+}
+
+.bannerLeft {
+  display: flex;
+}
+
 .bannerText {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  justify-content: center;
 }
 
 .bannerPhoto {
-  width: 350px;
+  width: 450px;
   height: auto;
   margin: 0;
 }
@@ -89,6 +100,7 @@ main {
 .banner h1 {
   margin: 0;
   font-size: 2.5em;
+  font-weight: 500;
 }
 
 .banner p {
@@ -115,7 +127,7 @@ h1 {
 
 h2 {
   font-size: 1.5em;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 h3 {
@@ -184,7 +196,7 @@ section {
     justify-content: flex-start;
   }
   .bannerPhoto {
-    width: 300px;
+    width: 400px;
     height: auto;
   }
   .navbar {
